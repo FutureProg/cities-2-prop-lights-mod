@@ -3,3 +3,4 @@ bin/
 obj/
 ts-build/
 thunderstore/*.dll
+thunderstore.zip
