@@ -13,7 +13,12 @@ build: clean restore
 run: 
 	E:\SteamLibrary\steamapps\common\Cities Skylines II\Cities2.exe -developerMode
 
-package-win:
+package-thunderstore: build	
+	@cmd /c copy /y "bin\Debug\netstandard2.1\0Harmony.dll" "thunderstore\"
+	@cmd /c copy /y "bin\Debug\netstandard2.1\PropLightsMod.dll" "thunderstore\"
+	@echo Packaged to thunderstore/
+
+package-win: build
 	@-mkdir dist
 	@cmd /c copy /y "bin\Debug\netstandard2.1\0Harmony.dll" "dist\"
 	@cmd /c copy /y "bin\Debug\netstandard2.1\PropLightsMod.dll" "dist\"

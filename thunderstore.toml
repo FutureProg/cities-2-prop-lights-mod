@@ -4,7 +4,7 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "Trejak"
 name = "PropLightsMod"
-versionNumber = "0.1.0"
+versionNumber = "1.0.0"
 description = "props plopped via the dev tools turn on and off during different times of day"
 websiteUrl = "https://thunderstore.io"
 containsNsfwContent = false
