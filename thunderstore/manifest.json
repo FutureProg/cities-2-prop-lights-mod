@@ -1,0 +1,9 @@
+{
+    "name": "Prop_Lights_Mod",
+    "description": "Light props plopped with dev tools reflect the time of day",
+    "version_number": "1.0.0",
+    "dependencies": [
+        "BepInEx-BepInExPack-5.4.2100"
+    ],
+    "website_url": "https://github.com/FutureProg/cities-2-prop-lights-mod"
+}
