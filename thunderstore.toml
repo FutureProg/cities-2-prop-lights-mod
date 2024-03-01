@@ -1,17 +1,16 @@
-[config]
+﻿[config]
 schemaVersion = "0.0.1"
 
 [package]
-namespace = "CaptainOfCoit"
-name = "MyCoolMod"
+namespace = "Trejak"
+name = "PropLightsMod"
 versionNumber = "0.1.0"
-description = "Example mod description"
+description = "props plopped via the dev tools turn on and off during different times of day"
 websiteUrl = "https://thunderstore.io"
 containsNsfwContent = false
 
 [package.dependencies]
-# BepInEx-BepInExPack = "5.4.2100"
-# CaptainOfCoit-HookUI = "0.3.0"
+BepInEx-BepInExPack = "5.4.2100"
 
 [build]
 icon = "./icon.png"

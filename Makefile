@@ -1,23 +1,26 @@
-all: build
-BEPINEX_VERSION = 6
+﻿all: build
+BEPINEX_VERSION = 5
 
 clean:
-	@dotnet clean
+	@dotnet clean PropLightsMod.csproj
 
 restore:
-	@dotnet restore
+	@dotnet restore PropLightsMod.csproj
 
 build: clean restore
-	@dotnet build /p:BepInExVersion=$(BEPINEX_VERSION)
+	@dotnet build PropLightsMod.csproj /p:BepInExVersion=$(BEPINEX_VERSION)
+
+run: 
+	E:\SteamLibrary\steamapps\common\Cities Skylines II\Cities2.exe -developerMode
 
 package-win:
 	@-mkdir dist
 	@cmd /c copy /y "bin\Debug\netstandard2.1\0Harmony.dll" "dist\"
-	@cmd /c copy /y "bin\Debug\netstandard2.1\MyCoolMod.dll" "dist\"
+	@cmd /c copy /y "bin\Debug\netstandard2.1\PropLightsMod.dll" "dist\"
 	@echo Packaged to dist/
 
 package-unix: build
 	@-mkdir dist
 	@cp bin/Debug/netstandard2.1/0Harmony.dll dist
-	@cp bin/Debug/netstandard2.1/MyCoolMod.dll dist
+	@cp bin/Debug/netstandard2.1/PropLightsMod.dll dist
 	@echo Packaged to dist/

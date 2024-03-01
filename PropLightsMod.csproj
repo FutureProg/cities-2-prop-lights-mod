@@ -9,9 +9,9 @@
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.1</TargetFramework>
-		<AssemblyName>MyCoolMod</AssemblyName>
-		<RootNamespace>MyCoolMod</RootNamespace>
-		<Description>A mod that I made for Cities: Skylines 2</Description>
+		<AssemblyName>PropLightsMod</AssemblyName>
+		<RootNamespace>Trejak.PropLightsMod</RootNamespace>
+		<Description>props plopped via the dev tools turn on and off during different times of day</Description>
 		<Version>0.1.0</Version>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<LangVersion>latest</LangVersion>
@@ -31,7 +31,7 @@
 		and also allow the build to move the mod DLLs into the plugins directory for you
 	-->
 	<PropertyGroup>
-		<Cities2_Location>C:\Program Files (x86)\Steam\steamapps\common\Cities Skylines II</Cities2_Location>
+		<Cities2_Location>E:\SteamLibrary\steamapps\common\Cities Skylines II</Cities2_Location>
 	</PropertyGroup>
 
 	<!--
@@ -56,11 +56,11 @@
 		Make sure you have a private `libcs2` repository with the appropriate DLLs for this to work.
 		DO NOT make the proprietary DLLs for the game public, as the files are owned by PDX/CO. 
 	-->
-	<ItemGroup>
+	<!-- <ItemGroup>
 		<Reference Include="libcs2/Colossal.*.dll" Private="False"/>
 		<Reference Include="libcs2/Game.dll" Private="False"/>
 		<Reference Include="libcs2/Unity.*.dll" Private="False"/>
-	</ItemGroup>
+	</ItemGroup> -->
 
 	<!--
 		Everything related to BepInEx and Harmony
